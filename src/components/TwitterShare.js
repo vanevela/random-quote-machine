@@ -1,16 +1,17 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTwitterSquare } from "@fortawesome/free-brands-svg-icons";
+import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 
-const element = <FontAwesomeIcon icon={faTwitterSquare} />;
+const element = <FontAwesomeIcon icon={faTwitter} />;
 function TwitterShare(props) {
   return (
-    <div>
+    <div className="col-xs-6">
       <a
         href={`https://twitter.com/intent/tweet?text= ${props.quote} ${props.author}`}
         id="tweet-quote"
         target="_blanck"
         title="Post this quote on Twitter"
+        className="btn btn-dark "
       >
         <i>{element}</i>
       </a>

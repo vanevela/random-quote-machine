@@ -1,7 +1,10 @@
 import React from "react";
 //import "./App.css";
+import Header from "./components/Header";
+import QuotesBox from "./components/QuotesBox";
 import Button from "./components/Button";
 import TwitterShare from "./components/TwitterShare";
+import Jumbotron from "react-bootstrap/Jumbotron";
 
 class App extends React.Component {
   constructor(props) {
@@ -39,18 +42,13 @@ class App extends React.Component {
     const { quote, author } = this.state;
 
     return (
-      <div id="wrapper">
-        <div className="App" id="quote-box">
-          <h1>Random Quote Machin</h1>
-          <div id="text">
-            <p>{quote}</p>
-          </div>
-          <div id="author">
-            <h5>{author}</h5>
-          </div>
-          <div id="buttons">
-            <Button nameButton={"New quote"} onClick={this.handleClick} />
+      <div className="container " id="wrapper">
+        <Header title="Quotes" />
+        <div className="" id="quote-box">
+          <QuotesBox quote={quote} author={author} />
+          <div className="row" id="buttons">
             <TwitterShare quote={quote} author={author} />
+            <Button nameButton={"New quote"} onClick={this.handleClick} />
           </div>
         </div>
       </div>
