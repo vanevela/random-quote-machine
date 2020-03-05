@@ -4,7 +4,7 @@ import { faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
 const element = <FontAwesomeIcon icon={faQuoteLeft} />;
 function QuotesBox(props) {
   return (
-    <div>
+    <div className="text-light">
       <div className="text-center" id="text">
         <i>{element}</i>
         <span className="font-italic"> {props.quote}</span>

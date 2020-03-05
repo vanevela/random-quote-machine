@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css?family=Lobster+Two&display=swap");
+h4 {
+  font-family: "Lobster Two", cursive;
+}
+
+body {
+  margin: 0;
+}
+body,
+html {
+  height: 100%;
+}
+body {
+  background-image: url("nine-kopfer-zosE9lAYQlo-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}

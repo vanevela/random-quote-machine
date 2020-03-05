@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import QuotesBox from "./components/QuotesBox";
 import Button from "./components/Button";
 import TwitterShare from "./components/TwitterShare";
-import Jumbotron from "react-bootstrap/Jumbotron";
+//import Jumbotron from "react-bootstrap/Jumbotron";
 
 class App extends React.Component {
   constructor(props) {
@@ -42,11 +42,14 @@ class App extends React.Component {
     const { quote, author } = this.state;
 
     return (
-      <div className="container " id="wrapper">
+      <div
+        className="row justify-content-center align-self-center"
+        id="wrapper"
+      >
         <Header title="Quotes" />
-        <div className="" id="quote-box">
-          <QuotesBox quote={quote} author={author} />
-          <div className="row" id="buttons">
+        <QuotesBox quote={quote} author={author} />
+        <div className="row">
+          <div className="col-sm-12 text-right" id="buttons">
             <TwitterShare quote={quote} author={author} />
             <Button nameButton={"New quote"} onClick={this.handleClick} />
           </div>

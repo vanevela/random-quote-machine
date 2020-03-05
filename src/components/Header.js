@@ -6,11 +6,11 @@ const element = <FontAwesomeIcon icon={faSeedling} />;
 function Header(props) {
   return (
     <div>
-      <div className="text-center">
+      <div className="text-center text-light">
         <i>{element}</i>
       </div>
 
-      <h4 className="text-center">{props.title}</h4>
+      <h4 className="text-center text-light">{props.title}</h4>
     </div>
   );
 }
