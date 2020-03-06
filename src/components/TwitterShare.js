@@ -10,7 +10,7 @@ function TwitterShare(props) {
       id="tweet-quote"
       target="_blanck"
       title="Post this quote on Twitter"
-      className="btn btn-outline-light btn-sm "
+      className="btn btn-sm  btn-outline-light  d-flex align-items-center"
     >
       <i>{element}</i>
     </a>

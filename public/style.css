@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Lobster+Two&display=swap");
-h4 {
+h3 {
   font-family: "Lobster Two", cursive;
 }
 
 body {
   margin: 0;
+  background-color: rgba(128, 128, 128, 0.822);
 }
 body,
 html {
@@ -13,5 +14,12 @@ html {
 body {
   background-image: url("nine-kopfer-zosE9lAYQlo-unsplash.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.wrapper {
+  height: 100vh;
+}
+#quote-box {
+  background-color: rgba(184, 170, 154, 0.096);
 }

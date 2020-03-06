@@ -43,15 +43,16 @@ class App extends React.Component {
 
     return (
       <div
-        className="row justify-content-center align-self-center"
+        className="wrapper d-flex align-items-center justify-content-center"
         id="wrapper"
       >
-        <Header title="Quotes" />
-        <QuotesBox quote={quote} author={author} />
-        <div className="row">
-          <div className="col-sm-12 text-right" id="buttons">
+        <div className="col-6 box p-4 rounded" id="quote-box">
+          <Header title="Quotes" />
+          <QuotesBox quote={quote} author={author} />
+
+          <div className="d-flex justify-content-between" id="buttons">
             <TwitterShare quote={quote} author={author} />
-            <Button nameButton={"New quote"} onClick={this.handleClick} />
+            <Button nameButton={"New Quote"} onClick={this.handleClick} />
           </div>
         </div>
       </div>

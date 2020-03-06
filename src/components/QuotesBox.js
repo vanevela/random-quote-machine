@@ -1,17 +1,14 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
-const element = <FontAwesomeIcon icon={faQuoteLeft} />;
+
 function QuotesBox(props) {
   return (
-    <div className="text-light">
-      <div className="text-center" id="text">
-        <i>{element}</i>
-        <span className="font-italic"> {props.quote}</span>
+    <div className=" mb-4 text-light">
+      <div className="text-center text-large" id="text">
+        <h5 className="font-italic">{props.quote}</h5>
       </div>
-      <div className="text-right" id="author">
-        -<span>{props.author}</span>
-      </div>
+      <small className=" d-block text-right " id="author">
+        - {props.author}
+      </small>
     </div>
   );
 }
