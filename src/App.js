@@ -50,7 +50,10 @@ class App extends React.Component {
           <Header title="Quotes" />
           <QuotesBox quote={quote} author={author} />
 
-          <div className="d-flex justify-content-between" id="buttons">
+          <div
+            className="d-flex justify-content-between text-dark"
+            id="buttons"
+          >
             <TwitterShare quote={quote} author={author} />
             <Button nameButton={"New Quote"} onClick={this.handleClick} />
           </div>

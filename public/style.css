@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lobster+Two&display=swap");
 h3 {
   font-family: "Lobster Two", cursive;
+  color: antiquewhite;
 }
 
 body {
@@ -11,8 +12,9 @@ body,
 html {
   height: 100%;
 }
+
 body {
-  background-image: url("nine-kopfer-zosE9lAYQlo-unsplash.jpg");
+  background-image: url("greg-rakozy-0LU4vO5iFpM-unsplash.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -21,5 +23,9 @@ body {
   height: 100vh;
 }
 #quote-box {
-  background-color: rgba(184, 170, 154, 0.096);
+  background-color: rgba(21, 25, 31, 0.425);
+  color: antiquewhite;
+}
+#faquote {
+  color: antiquewhite;
 }
